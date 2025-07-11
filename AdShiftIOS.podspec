@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AdShiftIOS'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Adshift SDK for iOS'
   s.documentation_url = 'https://github.com/AdShift/AdShift-iOS/blob/main/README.md'
   s.homepage         = 'https://github.com/AdShift/AdShift-iOS'
