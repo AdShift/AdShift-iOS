@@ -1,4 +1,4 @@
-# AdShift - SDK
+# ADShift - SDK
 
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
 
@@ -23,7 +23,7 @@
 
 #### [Swift Package Manager - SPM](#SPM)
 
-The [Swift Package Manager](https://swift.org/package-manager/) is Swift's native dependency management tool, built directly into the `swift` compiler. To integrate ADShift into your project:
+The [Swift Package Manager](https://swift.org/package-manager/) is Swift's native dependency management tool, built directly into the `swift` compiler. To integrate AdShift into your project:
 
 To install the SDK into your project, navigate to "File" -> "Add Package Dependencies" and use this link:
 
@@ -31,7 +31,7 @@ To install the SDK into your project, navigate to "File" -> "Add Package Depende
 https://github.com/adshift/adshift-swift.git
 ```
 
-After setting up your Swift package, simply add Adshift to the `dependencies` section in your `Package.swift` file:
+After setting up your Swift package, simply add AdShift to the `dependencies` section in your `Package.swift` file:
 
 ```swift
 dependencies: [
@@ -41,12 +41,27 @@ dependencies: [
 
 #### [Cocoapods](#Cocoapods)
 
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate AdShift into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+**Note:** It could be necessary to set "User Script Sandboxing" to "No" in your build settings.
+
+- Add below in podfile - in respective target block
+
+```swift
+pod 'AdShiftIOS'
+```
+
+- Execute below command in terminal
+
+```swift
+pod install
+```
 
 ---
 
 
 ## [Integration](#Integration)
-<ins> If you use AppDelegate, configure your Adshift Api Key in `didFinishLaunchingWithOptions`. </ins>
+<ins> If you use AppDelegate, configure your AdShift Api Key in `didFinishLaunchingWithOptions`. </ins>
 
 Simply import the SDK using:
 
@@ -54,7 +69,7 @@ Simply import the SDK using:
 import AdshiftSDK
 ```
 
-To integrate the ADShift SDK, simply call the `setApiKey` method with your unique API key.
+To integrate the AdShift SDK, simply call the `setApiKey` method with your unique API key.
 
 ```swift
 Adshift.shared.setApiKey(apiKey: "[YOUR_API_KEY]")
