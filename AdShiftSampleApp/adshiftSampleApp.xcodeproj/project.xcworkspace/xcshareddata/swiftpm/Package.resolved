@@ -1,0 +1,15 @@
+{
+  "originHash" : "3cdecd45434fe2d5a280f14661c656219356922068357fa82bdb2ed951d4d012",
+  "pins" : [
+    {
+      "identity" : "adshift-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AdShift/AdShift-iOS.git",
+      "state" : {
+        "revision" : "345b1c3920c9867a3e209caab0ffffc9547674b3",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}
